@@ -24,7 +24,8 @@ onSubmit = (e) =>{
     this.setState({ errors });
     
     if(Object.keys(errors).length === 0){
-        this.props.submit(this.state.data);
+        const data = this.state.data
+        this.props.submit(data);
     }
 
 }
